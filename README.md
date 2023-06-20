@@ -15,9 +15,9 @@ If your cluster is also running the microfrontends-webui you can display this we
 
 # Prerequisites
 - Kubernetes cluster
-- microfrontends-controller installed
-- microfrontends-webui installed
-- ingress-nginx (https://kubernetes.github.io/ingress-nginx/deploy/) controller installed (if you don't use nginx you have to adapt ingress.yaml in msevcik-ambulance-webapi)
+- microfrontends-controller installed (https://github.com/SevcikMichal/microfrontends-controller)
+- microfrontends-webui installed (https://github.com/SevcikMichal/microfrontends-webui)
+- ingress-nginx (https://kubernetes.github.io/ingress-nginx/deploy/) controller installed (if you don't use nginx you have to adapt ingress.yaml in webcomponent-webapi-sample)
 
 # Installation
 0. Fullfill the requirements
