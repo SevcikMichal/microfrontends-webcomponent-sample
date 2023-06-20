@@ -1,0 +1,28 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: webcomponent-webapi-sample
+ spec:
+   replicas: 1
+   selector:
+       matchLabels:
+         pod: webcomponent-webapi-sample-label
+   template:
+       metadata:
+         labels:
+           pod: webcomponent-webapi-sample-label
+       spec:
+         containers:
+         - name: msevcik-microfrontends-webcomponent-webapi-sample-container
+           image: msevcik/microfrontends-webcomponent-webapi-sample:latest
+           imagePullPolicy: Always
+           ports:
+           - name: webapi-port
+             containerPort: 8080
+           resources:
+             requests:
+               memory: "32Mi"
+               cpu: "0.1"
+             limits:
+               memory: "128Mi"
+               cpu: "0.3"

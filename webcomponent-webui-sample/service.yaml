@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: webcomponent-webui-sample
+spec:  
+  selector:
+    pod: webcomponent-webui-sample-label
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: http
