@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: msevcik-microfrontends-webcomponent-webui-sample-container
-        image: msevcik/microfrontends-webcomponent-webui-sample:latest
+        image: sevcikmichal/microfrontends-webcomponent-webui-sample:latest
         imagePullPolicy: Always
         ports:
         - name: http

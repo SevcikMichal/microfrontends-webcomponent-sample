@@ -14,7 +14,7 @@
        spec:
          containers:
          - name: msevcik-microfrontends-webcomponent-webapi-sample-container
-           image: msevcik/microfrontends-webcomponent-webapi-sample:latest
+           image: sevcikmichal/microfrontends-webcomponent-webapi-sample:latest
            imagePullPolicy: Always
            ports:
            - name: webapi-port
